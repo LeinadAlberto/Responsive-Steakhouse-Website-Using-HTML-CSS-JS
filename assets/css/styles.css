@@ -379,12 +379,178 @@ img {
 	bottom: -2.5rem;
 }
 
-
-
 /*=============== MENU SECTION ===============*/
+.menu__container {
+	row-gap: 4rem;
+}
 
+.menu__description {
+	text-align: center;
+}
+
+.menu__content {
+	display: grid;
+	row-gap: 2rem;
+}
+
+.menu__card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu__name {
+	font: var(--font-bold) var(--h2-font-size) var(--second-font);
+	color: var(--first-color);
+	margin-bottom: 0.5rem;
+}
+
+.menu__summary {
+	font-size: var(--small-font-size);
+}
+
+.menu__images {
+	position: relative;
+}
+
+.menu__card:nth-child(even) .menu__info {
+	order: -1;
+}
+
+.menu__card:nth-child(odd) .menu__images {
+	justify-self: flex-start;
+}
+
+.menu__card:nth-child(even) .menu__images {
+	justify-self: flex-end;
+}
+
+.menu__dish-1 {
+	position: relative;
+	width: 100px;
+	z-index: 5;
+}
+
+.menu__rosemary {
+	position: absolute;
+	width: 80px;
+	left: -1rem;
+	bottom: -1rem;
+}
+
+.menu__flour-1 {
+	position: absolute;
+	width: 100px;
+	top: -2rem;
+	right: -1.5rem;
+}
+
+.menu__dish-2 {
+	position: relative;
+	width: 140px;
+	z-index: 5;
+}
+
+.menu__flour-2 { 
+	position: absolute;
+	width: 150px;
+	top: -2rem;
+	left: -3rem;
+}
+
+.menu__pepper {
+	position: absolute;
+	width: 100px;
+	right: 0.5rem;
+	bottom: -2rem;
+}
+
+.menu__dish-3 {
+	position: relative;
+	width: 120px;
+	z-index: 5;
+}
+
+.menu__flour-3 {
+	position: absolute;
+	max-width: initial;
+	width: 150px;
+	top: -3rem;
+	right: -3rem;
+}
+
+.menu__tomato {
+	width: 50px;
+	position: absolute;
+	left: 0.5rem;
+	bottom: -1rem;
+}
+
+.menu__dish-4 {
+	position: relative;
+	width: 125px;
+	z-index: 5;
+}
+
+.menu__flour-4 {
+	position: absolute;
+	max-width: initial;
+	width: 150px;
+	top: -1.5rem;
+	left: -2rem;
+}
 
 /*=============== EVENTS SECTION ===============*/
+.events__container {
+	position: relative;
+	row-gap: 0;
+	padding-bottom: 2rem;
+}
+
+.events__flour {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: -3rem;
+}
+
+.events__img {
+	position: relative;
+}
+
+.events__data {
+	position: relative;
+	background-color: var(--white-color);
+	color: var(--dark-color);
+	padding: 3rem 1rem;
+	text-align: center;
+}
+
+.events__description {
+	margin-bottom: 2rem;
+	color: var(--text-color);
+}
+
+.events__info {
+	margin-bottom: 3rem;
+}
+
+.events__name {
+	font-size: var(--normal-font-size);
+	margin-bottom: 0.5rem;
+}
+
+.events__details {
+	color: var(--text-color);
+}
+
+.events__spoon {
+	width: 150px;
+	position: absolute;
+	right: -1.5rem;
+	bottom: -1rem;
+}
 
 
 /*=============== INGREDIENTS SECTION ===============*/
